@@ -43,7 +43,7 @@ Projenin Python betiğini çalıştırmak için:
 
 1.  **Depoyu klonlayın:**
     ```bash
-    git clone [https://github.com/senin-kullanici-adin/gemini-notion-dictionary.git](https://github.com/senin-kullanici-adin/gemini-notion-dictionary.git)
+    git clone [https://github.com/talhacaglar/gemini-notion-dictionary.git](https://github.com/senin-kullanici-adin/gemini-notion-dictionary.git)
     cd gemini-notion-dictionary
     ```
 2.  **Gerekli kütüphaneleri yükleyin:**
