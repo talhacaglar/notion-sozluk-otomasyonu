@@ -1,0 +1,9 @@
+.env
+
+# Python cache dosyaları
+__pycache__/
+
+# Sanal ortam klasörleri
+venv/
+*.venv
+env/
