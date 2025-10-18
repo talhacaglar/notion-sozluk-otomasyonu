@@ -1,0 +1,1 @@
+# notion-sozluk-otomasyonu
