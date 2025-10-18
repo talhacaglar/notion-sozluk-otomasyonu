@@ -31,7 +31,7 @@ Kişisel bir kelime öğrenme ve sözlük veritabanı oluşturma sürecini otoma
 
 * **Arayüz & Veri Tabanı:** Notion
 * **Backend & Mantık:** Python 3
-* **Yapay Zeka Modeli:** Google Gemini (`gemini-1.5-flash`)
+* **Yapay Zeka Modeli:** Google Gemini (`gemini-2.5-flash`)
 * **Entegrasyon & Otomasyon:** ActivePieces (Webhook ile)
 * **Kütüphaneler:** `google-generativeai`, `requests`, `python-dotenv`, `notion-client` *(Eğer Notion'ı Python ile güncelliyorsan)*
 
@@ -43,8 +43,8 @@ Projenin Python betiğini çalıştırmak için:
 
 1.  **Depoyu klonlayın:**
     ```bash
-    git clone [https://github.com/talhacaglar/gemini-notion-dictionary.git](https://github.com/senin-kullanici-adin/gemini-notion-dictionary.git)
-    cd gemini-notion-dictionary
+    git clone [https://github.com/talhacaglar/notion-sozluk-otomasyonu.git](https://github.com/talhacaglar/notion-sozluk-otomasyonu.git)
+    cd notion-sozluk-otomasyonu
     ```
 2.  **Gerekli kütüphaneleri yükleyin:**
     ```bash
