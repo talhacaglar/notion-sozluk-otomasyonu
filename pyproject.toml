@@ -1,0 +1,22 @@
+[build-system]
+# Modern Python paketleme için gerekli
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notion-sozluk-uygulamasi"
+version = "0.1.0"
+description = "Notion Sözlük Otomasyonu uygulaması."
+requires-python = ">=3.8"
+# requirements.txt dosyanızdaki paketleri buraya ekleyin:
+dependencies = [
+    # Örnek bağımlılıklar:
+    "requests",
+    "google-generativeai",
+    "requests",
+    "python-dotenv"
+]
+
+[project.scripts]
+# Kullanıcının terminale yazacağı komut ismi = Python Modülü:Fonksiyon Adı
+"notion-sozluk-uygulamasi" = "main:main"
