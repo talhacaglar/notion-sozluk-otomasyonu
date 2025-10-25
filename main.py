@@ -25,7 +25,7 @@ except Exception as e:
 
 def yapay_zekadan_bilgi_al(kelime: str) -> tuple[str, str]:
     print(f"'{kelime}' kelimesi için Gemini'den bilgi alınıyor...")
-    model = genai.GenerativeModel('gemini-2.5-flash') # Model adını güncel tutmak iyi bir pratiktir
+    model = genai.GenerativeModel('gemini-2.5-flash')
     prompt = f"""
     Sen bir sözlük asistanısın. Sana verilen kelimenin anlamını ve o kelimeyle ilgili bir örnek cümleyi içeren bir JSON nesnesi oluştur.
     Kelime: '{kelime}'
@@ -61,30 +61,25 @@ def webhook_gonder(kelime: str, anlam: str, cumle: str):
     except requests.exceptions.RequestException as e:
         print(f"❌ Hata: Webhook'a gönderim başarısız oldu. Hata: {e}")
 
-# --- 3️⃣ ANA PROGRAM AKIŞI --- (DEĞİŞİKLİKLER BURADA)
 def main():
     """
     Kullanıcıdan sürekli olarak kelime alır ve çıkış komutu girilene kadar çalışır.
     """
     while True:
-        # Kullanıcıya çıkış seçeneğini de belirterek kelime sor
         kelime = input("Anlamını öğrenmek istediğiniz kelimeyi girin (Çıkmak için 'çık', 'q' veya 'exit' yazın): ").strip()
 
-        # Kullanıcı çıkmak isterse döngüyü sonlandır
         if kelime.lower() in ['çık', 'q', 'exit']:
             print("Programdan çıkılıyor. Hoşça kalın!")
             break
 
-        # Eğer kullanıcı bir şey girmeden Enter'a basarsa uyar ve döngüye devam et
         if not kelime:
             print("Lütfen geçerli bir kelime girin.")
-            continue # Döngünün başına dön
+            continue 
 
         anlam, cumle = yapay_zekadan_bilgi_al(kelime)
         
         if anlam != "Hata":
             webhook_gonder(kelime, anlam, cumle)
-            # Çıktıyı daha düzenli hale getir
             print("\n--- SONUÇ ---")
             print(f"Kelime       : {kelime}")
             print(f"Bulunan Anlam: {anlam}")
