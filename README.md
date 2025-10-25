@@ -43,7 +43,7 @@ Projenin Python betiğini çalıştırmak için:
 
 1.  **Depoyu klonlayın:**
     ```bash
-    git clone [https://github.com/talhacaglar/notion-sozluk-otomasyonu.git](https://github.com/talhacaglar/notion-sozluk-otomasyonu.git)
+    git clone https://github.com/talhacaglar/notion-sozluk-otomasyonu.git
     cd notion-sozluk-otomasyonu
     ```
 2.  **Gerekli kütüphaneleri yükleyin:**
