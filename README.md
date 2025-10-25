@@ -33,7 +33,7 @@ Kişisel bir kelime öğrenme ve sözlük veritabanı oluşturma sürecini otoma
 * **Backend & Mantık:** Python 3
 * **Yapay Zeka Modeli:** Google Gemini (`gemini-2.5-flash`)
 * **Entegrasyon & Otomasyon:** ActivePieces (Webhook ile)
-* **Kütüphaneler:** `google-generativeai`, `requests`, `python-dotenv`, `notion-client` *(Eğer Notion'ı Python ile güncelliyorsan)*
+* **Kütüphaneler:** `google-generativeai`, `requests`, `python-dotenv`, `notion-client` *(Eğer Notion'ı Python ile güncelliyorsanız)*
 
 ---
 
@@ -51,11 +51,11 @@ Projenin Python betiğini çalıştırmak için:
     pip install -r requirements.txt
     ```
 3.  **Ortam değişkenlerini ayarlayın:**
-    * Proje ana dizininde `.env` adında bir dosya oluşturun.
+    * Proje ana dizininde `.env` adıyla yer alan dosyaya aşağıdaki gerekli bilgileri giriniz.
     * `API_KEY` ve `WEBHOOK_URL` bilgilerinizi bu dosyaya aşağıdaki formatta ekleyin:
         ```
-        API_KEY="SIZIN_GEMINI_API_ANAHTARINIZ"
-        WEBHOOK_URL="SIZIN_WEBHOOK_URL"
+        API_KEY=SIZIN_GEMINI_API_ANAHTARINIZ
+        WEBHOOK_URL=SIZIN_WEBHOOK_URL
         ```
 4.  **Betiği çalıştırın:**
     ```bash
