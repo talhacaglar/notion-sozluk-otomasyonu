@@ -4,6 +4,9 @@ import json
 import google.generativeai as genai
 
 from dotenv import load_dotenv
+#Pipx ile indirme yaptıysanız iki alt satırı yorum satırından çıkarınız.
+#dotenv_path = '.env uzantılı klasörün yolu'
+#load_dotenv(dotenv_path=dotenv_path)
 
 load_dotenv()
 
